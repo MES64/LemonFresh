@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LemonFresh Cleaners | About</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <a href="index.html" class="logo">
+                <img src="./assets/logo.svg" alt="LemonFresh Logo">
+                <p>LemonFresh</p>
+            </a>
+
+            <nav class="header-nav">
+                <img src="./assets/close.svg" alt="Close Menu" class="close hide-tablet">
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                </ul>
+
+                <a href="contact.html" class="contact-mobile-btn hide-tablet">Contact</a>
+            </nav>
+
+            <a href="contact.html" class="contact-btn hide-mobile">Contact Us</a>
+
+            <img src="./assets/menu.svg" alt="Open Menu" class="menu hide-tablet">
+        </div>
+    </header>
+
+    <section class="under-construction">
+        <div class="wrapper">
+            <img src="./assets/tools.svg" alt="tools-icon">
+            <h1>Page Under Construction</h1>
+            <p>If you have any questions please contact us</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="wrapper">
+            <div class="footer-header">
+                <a href="index.html" class="logo">
+                    <img src="./assets/logo.svg" alt="LemonFresh Logo">
+                    <p>LemonFresh</p>
+                </a>
+    
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html" class="active">Services</a></li>
+                    </ul>
+                </nav>
+            </div>
+    
+            <div class="contact">
+                <div>
+                    <nav>
+                        <ul>
+                            <li><a href="#"><img src="./assets/twitter.svg" alt="Twitter"></a></li>
+                            <li><a href="#"><img src="./assets/tiktok.svg" alt="Tiktok"></a></li>
+                        </ul>
+                    </nav>
+    
+                    <p>hello@lemonfreshcleaners.co.uk</p>
+                    <p>07415563862</p>
+                </div>
+    
+                <a href="contact.html" class="contact-btn">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const menu = document.querySelector('.menu')
+        const close = document.querySelector('.close')
+        const nav = document.querySelector('.header-nav')
+
+        menu.addEventListener('click', () => {
+            nav.classList.add('open-nav')
+        })
+
+        close.addEventListener('click', () => {
+            nav.classList.remove('open-nav')
+        })
+    </script>
+</body>
+</html>
