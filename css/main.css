@@ -734,6 +734,10 @@ section.contact-details .wrapper h1 {
   section.about .wrapper a {
     margin: 9.5em 0 0;
   }
+  /* Footer - Desktop */
+  footer .wrapper {
+    padding: 3.8em 10em;
+  }
 }
 @media only screen and (min-width: 1020px) {
   /* Benefits Section - Desktop */
